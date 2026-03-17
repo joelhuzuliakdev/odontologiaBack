@@ -1,0 +1,234 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Reservar turno | DentalPure">
+
+<section class="reserva-container">
+
+<h1>Reservar turno</h1>
+<p>Elegí el tratamiento, el horario y completá tus datos.</p>
+
+<div class="step">
+<h2>1. Tratamiento</h2>
+
+<select id="tratamiento">
+<option value="">Seleccionar tratamiento</option>
+<option>Blanqueamiento Dental</option>
+<option>Implantes Dentales</option>
+<option>Ortodoncia Invisible</option>
+<option>Endodoncia</option>
+<option>Odontología Infantil</option>
+<option>Consulta General</option>
+</select>
+</div>
+
+<div class="step">
+<h2>2. Fecha</h2>
+
+<input type="date" id="fecha" />
+
+<h2>Horarios disponibles</h2>
+
+<div class="horarios" id="horariosContainer"></div>
+</div>
+
+<div class="step">
+
+<h2>3. Tus datos</h2>
+
+<div class="form-row">
+<input id="nombre" type="text" placeholder="Nombre"/>
+<input id="apellido" type="text" placeholder="Apellido"/>
+</div>
+
+<div class="form-row">
+<input id="telefono" type="tel" placeholder="Teléfono"/>
+<input id="email" type="email" placeholder="Email"/>
+</div>
+
+<button class="reservar-btn" onclick="crearReserva()">
+Confirmar reserva
+</button>
+
+</div>
+
+</section>
+
+
+<!-- MODAL CONFIRMACION -->
+<div id="modalConfirmacion" class="modal">
+
+<div class="modal-card">
+
+<div class="check">✓</div>
+
+<h2>Turno confirmado</h2>
+
+<p id="textoConfirmacion"></p>
+
+<button onclick="cerrarModal()" class="cerrar-btn">
+Cerrar
+</button>
+
+</div>
+
+</div>
+
+
+<style>
+
+.reserva-container{
+max-width:800px;
+margin:auto;
+padding:6rem 2rem;
+}
+
+.step{
+margin-bottom:3rem;
+}
+
+h1{
+font-family:'Cormorant Garamond', serif;
+font-size:3rem;
+margin-bottom:1rem;
+}
+
+select,input{
+width:100%;
+padding:0.8rem;
+margin-top:0.5rem;
+border-radius:8px;
+border:1px solid #ddd;
+font-size:0.95rem;
+}
+
+.horarios{
+display:flex;
+flex-wrap:wrap;
+gap:0.5rem;
+margin-top:1rem;
+}
+
+:global(.hora){
+padding:0.6rem 1rem;
+border-radius:20px;
+border:1px solid #ccc;
+background:white;
+cursor:pointer;
+}
+
+:global(.hora.selected){
+background:#7A9E8E;
+color:white;
+}
+
+:global(.hora:hover){
+background:#7A9E8E;
+color:white;
+}
+
+.form-row{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:1rem;
+margin-bottom:1rem;
+}
+
+.reservar-btn{
+background:#7A9E8E;
+color:white;
+border:none;
+padding:1rem;
+border-radius:30px;
+cursor:pointer;
+font-size:1rem;
+width:100%;
+}
+
+.reservar-btn:hover{
+background:#5A7D6D;
+}
+
+
+/* MODAL */
+
+.modal{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+display:flex;
+align-items:center;
+justify-content:center;
+opacity:0;
+pointer-events:none;
+transition:0.3s;
+}
+
+.modal.show{
+opacity:1;
+pointer-events:auto;
+}
+
+.modal-card{
+background:white;
+padding:2.5rem;
+border-radius:16px;
+text-align:center;
+max-width:400px;
+box-shadow:0 10px 40px rgba(0,0,0,0.2);
+animation:modalEntrada .4s ease;
+}
+
+@keyframes modalEntrada{
+from{
+transform:translateY(20px);
+opacity:0;
+}
+to{
+transform:translateY(0);
+opacity:1;
+}
+}
+
+.check{
+width:60px;
+height:60px;
+background:#7A9E8E;
+color:white;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+margin:auto;
+margin-bottom:1rem;
+}
+
+.modal-card h2{
+font-family:'Cormorant Garamond', serif;
+margin-bottom:0.5rem;
+}
+
+.modal-card p{
+line-height:1.6;
+}
+
+.cerrar-btn{
+margin-top:1.5rem;
+background:#7A9E8E;
+border:none;
+color:white;
+padding:0.7rem 1.5rem;
+border-radius:20px;
+cursor:pointer;
+}
+
+</style>
+
+<script src="/scripts/reservas.js" is:inline></script>
+
+</Layout>

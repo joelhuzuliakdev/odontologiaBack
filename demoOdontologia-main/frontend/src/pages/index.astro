@@ -1,0 +1,1602 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title='Clínica Dental Córdoba | Implantes · Ortodoncia · Blanqueamiento' description="Clínica odontológica en Córdoba con más de 15 años de experiencia. Implantes, blanqueamiento, ortodoncia invisible y más. ¡Primera consulta gratis!">
+	<!-- ═══════════════ NAV ═══════════════ -->
+	<nav id="navbar">
+		<a href="#inicio" class="nav-logo">Dental<span>Pure</span></a>
+		<ul class="nav-links">
+			<li><a href="#servicios">Servicios</a></li>
+			<li><a href="#nosotros">Nosotros</a></li>
+			<li><a href="#galeria">Galería</a></li>
+			<li><a href="#resenas">Reseñas</a></li>
+			<li><a href="#equipo">Equipo</a></li>
+			<li><a href="/reservar" class="nav-cta">Agendar Cita</a></li>
+		</ul>
+		<button class="hamburger" id="hamburger" aria-label="Abrir menú">
+			<span></span><span></span><span></span>
+		</button>
+	</nav>
+
+	<!-- Mobile Menu -->
+	<div class="mobile-menu" id="mobileMenu">
+		<button class="mobile-menu-close" id="menuClose">✕</button>
+		<a href="#servicios" class="mobile-nav-link">Servicios</a>
+		<a href="#nosotros" class="mobile-nav-link">Nosotros</a>
+		<a href="#galeria" class="mobile-nav-link">Galería</a>
+		<a href="#resenas" class="mobile-nav-link">Reseñas</a>
+		<a href="#equipo" class="mobile-nav-link">Equipo</a>
+		<a href="#contacto" class="mobile-nav-link">Agendar Cita</a>
+	</div>
+
+	<!-- ═══════════════ HERO ═══════════════ -->
+	<section id="inicio">
+		<div class="hero-left">
+			<div class="hero-badge reveal">Clínica certificada · Córdoba, AR</div>
+			<h1 class="hero-h1 reveal reveal-delay-1">
+			Tu sonrisa<br>
+			<em>perfecta</em><br>
+			comienza aquí
+			</h1>
+			<p class="hero-p reveal reveal-delay-2">
+			Combinamos tecnología de vanguardia con el más alto estándar de cuidado dental para transformar tu salud bucal y tu confianza.
+			</p>
+			<div class="hero-actions reveal reveal-delay-3">
+				<a href="#contacto" class="btn-primary">
+					Agendar Consulta
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+				</a>
+				<a href="#servicios" class="btn-secondary">
+					Ver servicios
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+				</a>
+			</div>
+			<div class="hero-stats reveal reveal-delay-4">
+				<div>
+					<div class="stat-num">15<span>+</span></div>
+					<div class="stat-label">Años de experiencia</div>
+				</div>
+				<div>
+					<div class="stat-num">4.9<span>★</span></div>
+					<div class="stat-label">Calificación promedio</div>
+				</div>
+				<div>
+					<div class="stat-num">3K<span>+</span></div>
+					<div class="stat-label">Pacientes satisfechos</div>
+				</div>
+			</div>
+		</div>
+		<div class="hero-right">
+			<div class="hero-image-wrap">
+				<img
+					class="hero-img"
+					src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=900&q=80"
+					alt="Odontóloga profesional"
+				/>
+			</div>
+			<div class="hero-card">
+				<div class="hero-card-icon">🦷</div>
+				<div class="hero-card-text">
+					<strong>Consulta Gratuita</strong>
+					<span>Primera visita sin costo</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ═══════════════ SERVICIOS ═══════════════ -->
+	<section id="servicios">
+		<div style="max-width:1200px;margin:0 auto;padding:4rem 2rem;overflow:hidden;">
+			<div style="text-align:center;margin-bottom:3rem;">
+				<div class="section-label reveal" style="justify-content:center;color:var(--sage-lt);">
+					<span style="background:var(--sage-lt);"></span>Lo que ofrecemos
+				</div>
+				<h2 class="section-title reveal reveal-delay-1" style="color:var(--ivory);">Tratamientos <em>especializados</em></h2>
+			</div>
+			<div class="services-grid">
+				<div class="service-item reveal reveal-delay-1">
+					<div class="service-icon">✨</div>
+					<h3>Blanqueamiento Dental</h3>
+					<p>Hasta 8 tonos más blanco con tecnología LED de última generación. Resultados visibles desde la primera sesión.</p>
+					<span class="service-tag">Estética</span>
+				</div>
+				<div class="service-item reveal reveal-delay-2">
+					<div class="service-icon">🦷</div>
+					<h3>Implantes Dentales</h3>
+					<p>Solución permanente y natural para dientes faltantes. Implantes de titanio con garantía de por vida.</p>
+					<span class="service-tag">Implantología</span>
+				</div>
+				<div class="service-item reveal reveal-delay-3">
+					<div class="service-icon">😁</div>
+					<h3>Ortodoncia Invisible</h3>
+					<p>Alineadores transparentes personalizados para corregir la posición dental sin brackets metálicos.</p>
+					<span class="service-tag">Ortodoncia</span>
+				</div>
+				<div class="service-item reveal reveal-delay-4">
+					<div class="service-icon">🔬</div>
+					<h3>Endodoncia</h3>
+					<p>Tratamiento de conductos con técnicas mínimamente invasivas y anestesia avanzada para tu comodidad.</p>
+					<span class="service-tag">Tratamiento</span>
+				</div>
+				<div class="service-item reveal reveal-delay-1">
+					<div class="service-icon">👶</div>
+					<h3>Odontología Infantil</h3>
+					<p>Atención especializada para niños en un ambiente amigable y seguro que hace que amen ir al dentista.</p>
+					<span class="service-tag">Pediatría</span>
+				</div>
+				<div class="service-item reveal reveal-delay-2">
+					<div class="service-icon">🫀</div>
+					<h3>Periodoncia</h3>
+					<p>Tratamiento de encías y enfermedades periodontales para mantener la base de tu salud bucal.</p>
+					<span class="service-tag">Salud Bucal</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ═══════════════ NOSOTROS ═══════════════ -->
+	<section id="nosotros">
+		<div class="section-inner">
+			<div class="about-images reveal from-left">
+				<img
+					class="about-img-main"
+					src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=700&q=80"
+					alt="Clínica dental moderna"
+				/>
+				<img
+					class="about-img-sec"
+					src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=500&q=80"
+					alt="Odontólogo con paciente"
+				/>
+				<div class="about-badge-cert">
+					<strong>ISO</strong>
+					<span>Certificados</span>
+				</div>
+			</div>
+			<div>
+				<div class="section-label reveal">Sobre nosotros</div>
+				<h2 class="section-title reveal reveal-delay-1">
+					Más de 15 años cuidando<br>
+					<em>sonrisas en Córdoba</em>
+				</h2>
+				<p class="section-body reveal reveal-delay-2">
+					DentalPure nació con una visión clara: ofrecer odontología de excelencia en un entorno cálido y humano. Nuestro equipo de especialistas combina formación internacional con tecnología de punta para garantizarte la mejor experiencia.
+				</p>
+				<p class="section-body reveal reveal-delay-3" style="margin-top:0.8rem;">
+					Creemos que cada sonrisa es única. Por eso personalizamos cada tratamiento, escuchamos tus objetivos y trabajamos juntos para alcanzarlos con cuidado y precisión.
+				</p>
+				<div class="about-values reveal reveal-delay-4">
+					<div class="value-card">
+						<div class="value-icon">🏆</div>
+						<h4>Excelencia Clínica</h4>
+						<p>Tecnología digital 3D para diagnósticos precisos y tratamientos sin errores.</p>
+					</div>
+					<div class="value-card">
+						<div class="value-icon">💚</div>
+						<h4>Calidez Humana</h4>
+						<p>Un ambiente tranquilo donde cada paciente se siente en casa desde el primer momento.</p>
+					</div>
+						<div class="value-card">
+						<div class="value-icon">🔒</div>
+						<h4>Seguridad Total</h4>
+						<p>Protocolos de esterilización certificados y materiales de primera calidad.</p>
+					</div>
+					<div class="value-card">
+						<div class="value-icon">💰</div>
+						<h4>Accesibilidad</h4>
+						<p>Planes de financiación flexibles para que el costo nunca sea un obstáculo.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ═══════════════ GALERÍA ═══════════════ -->
+	<section id="galeria">
+		<div class="section-inner">
+			<div class="gallery-header">
+				<div>
+					<div class="section-label reveal">Instalaciones</div>
+					<h2 class="section-title reveal reveal-delay-1">Nuestra <em>clínica</em></h2>
+				</div>
+				<p class="section-body reveal" style="max-width:320px;">
+					Diseñada para brindarte comodidad y tecnología en cada rincón.
+				</p>
+			</div>
+			<div class="gallery-grid">
+				<div class="gallery-item reveal scale-up">
+					<img class="gallery-img" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=900&q=80" alt="Sala de espera" />
+					<div class="gallery-overlay"><span>Sala de espera</span></div>
+				</div>
+				<div class="gallery-item reveal scale-up reveal-delay-1">
+					<img class="gallery-img" src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=500&q=80" alt="Consultorio" />
+					<div class="gallery-overlay"><span>Consultorio principal</span></div>
+				</div>
+				<div class="gallery-item reveal scale-up reveal-delay-2">
+					<img class="gallery-img" src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=500&q=80" alt="Equipamiento" />
+					<div class="gallery-overlay"><span>Equipamiento digital</span></div>
+				</div>
+				<div class="gallery-item reveal scale-up reveal-delay-3">
+					<img class="gallery-img" src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=500&q=80" alt="Laboratorio" />
+					<div class="gallery-overlay"><span>Sala de tratamientos</span></div>
+				</div>
+				<div class="gallery-item reveal scale-up reveal-delay-1">
+					<img class="gallery-img" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&q=80" alt="Recepción" />
+					<div class="gallery-overlay"><span>Recepción</span></div>
+				</div>
+				<div class="gallery-item reveal scale-up reveal-delay-2">
+					<img class="gallery-img" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=900&q=80" alt="Laboratorio dental" />
+					<div class="gallery-overlay"><span>Laboratorio dental</span></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ═══════════════ RESEÑAS ═══════════════ -->
+	<section id="resenas">
+		<div class="section-inner">
+			<div class="reviews-left">
+				<div class="section-label reveal">Opiniones</div>
+				<h2 class="section-title reveal reveal-delay-1">Lo que dicen<br><em>nuestros pacientes</em></h2>
+				<div class="overall-score reveal reveal-delay-2">4.9</div>
+				<div class="stars reveal reveal-delay-3">★★★★★</div>
+				<p class="reviews-count reveal reveal-delay-3">Basado en +320 reseñas verificadas</p>
+				<div class="rating-bars reveal reveal-delay-4">
+					<div class="rating-bar-row">
+						<span>5★</span>
+						<div class="rating-bar-track"><div class="rating-bar-fill" data-width="92" style="width:0%"></div></div>
+						<span>92%</span>
+					</div>
+					<div class="rating-bar-row">
+						<span>4★</span>
+						<div class="rating-bar-track"><div class="rating-bar-fill" data-width="5" style="width:0%"></div></div>
+						<span>5%</span>
+					</div>
+					<div class="rating-bar-row">
+						<span>3★</span>
+						<div class="rating-bar-track"><div class="rating-bar-fill" data-width="2" style="width:0%"></div></div>
+						<span>2%</span>
+					</div>
+					<div class="rating-bar-row">
+						<span>2★</span>
+						<div class="rating-bar-track"><div class="rating-bar-fill" data-width="1" style="width:0%"></div></div>
+						<span>1%</span>
+					</div>
+				</div>
+			</div>
+			<div class="reviews-grid">
+				<div class="review-card reveal">
+					<div class="reviewer">
+						<img class="reviewer-avatar" src="https://i.pravatar.cc/80?img=47" alt="María G." />
+						<div>
+							<div class="reviewer-name">María González</div>
+							<div class="reviewer-date">Hace 2 semanas</div>
+						</div>
+					</div>
+					<div class="review-stars">★★★★★</div>
+					<p class="review-text">Me hice el blanqueamiento y quedé enamorada del resultado. El equipo es increíblemente amable y profesional. Me explicaron todo el proceso y me sentí muy cómoda durante toda la sesión.</p>
+					<span class="review-badge">Blanqueamiento</span>
+				</div>
+				<div class="review-card reveal reveal-delay-1">
+					<div class="reviewer">
+						<img class="reviewer-avatar" src="https://i.pravatar.cc/80?img=12" alt="Carlos M." />
+						<div>
+							<div class="reviewer-name">Carlos Martínez</div>
+							<div class="reviewer-date">Hace 1 mes</div>
+						</div>
+					</div>
+					<div class="review-stars">★★★★★</div>
+					<p class="review-text">Tenía miedo a los implantes pero DentalPure cambió mi experiencia completamente. Sin dolor, excelente atención y el resultado es indistinguible de dientes naturales. Totalmente recomendado.</p>
+					<span class="review-badge">Implantes</span>
+				</div>
+				<div class="review-card reveal reveal-delay-2">
+					<div class="reviewer">
+						<img class="reviewer-avatar" src="https://i.pravatar.cc/80?img=25" alt="Laura P." />
+						<div>
+							<div class="reviewer-name">Laura Pérez</div>
+							<div class="reviewer-date">Hace 3 semanas</div>
+						</div>
+					</div>
+					<div class="review-stars">★★★★★</div>
+					<p class="review-text">Llevo a mis hijos desde hace 3 años. Son muy pacientes con los niños, tienen una sala especial para ellos y siempre salen contentos. La mejor clínica pediátrica dental de Córdoba sin duda.</p>
+					<span class="review-badge">Odontopediatría</span>
+				</div>
+				<div class="review-card reveal reveal-delay-3">
+					<div class="reviewer">
+						<img class="reviewer-avatar" src="https://i.pravatar.cc/80?img=33" alt="Roberto S." />
+						<div>
+							<div class="reviewer-name">Roberto Suárez</div>
+							<div class="reviewer-date">Hace 2 meses</div>
+						</div>
+					</div>
+					<div class="review-stars">★★★★★</div>
+					<p class="review-text">El tratamiento de ortodoncia invisible superó mis expectativas. En 10 meses tuve una sonrisa completamente diferente. El seguimiento fue constante y el resultado final es perfecto.</p>
+					<span class="review-badge">Ortodoncia</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ═══════════════ EQUIPO ═══════════════ -->
+	<section id="equipo">
+		<div class="section-inner" style="padding-bottom:5rem;">
+			<div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:1rem;">
+				<div>
+					<div class="section-label reveal">Especialistas</div>
+					<h2 class="section-title reveal reveal-delay-1">Nuestro <em>equipo</em></h2>
+				</div>
+				<p class="section-body reveal" style="max-width:340px;color:rgba(247,244,239,0.55);">
+					Profesionales con formación internacional y pasión por la odontología de excelencia.
+				</p>
+			</div>
+			<div class="team-grid">
+				<div class="team-card reveal reveal-delay-1">
+					<img class="team-img" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&q=80" alt="Dra. Ana Rodríguez" />
+					<div class="team-info">
+						<div class="team-name">Dra. Ana Rodríguez</div>
+						<div class="team-role">Directora · Implantología</div>
+						<div class="team-socials">
+							<div class="team-social-btn">in</div>
+							<div class="team-social-btn">@</div>
+						</div>
+					</div>
+				</div>
+				<div class="team-card reveal reveal-delay-2">
+					<img class="team-img" src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=600&q=80" alt="Dr. Marcos Torres" />
+					<div class="team-info">
+						<div class="team-name">Dr. Marcos Torres</div>
+						<div class="team-role">Cirugía & Periodoncia</div>
+						<div class="team-socials">
+							<div class="team-social-btn">in</div>
+							<div class="team-social-btn">@</div>
+						</div>
+					</div>
+				</div>
+				<div class="team-card reveal reveal-delay-3">
+					<img class="team-img" src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=600&q=80" alt="Dra. Valentina Cruz" />
+					<div class="team-info">
+						<div class="team-name">Dra. Valentina Cruz</div>
+						<div class="team-role">Ortodoncia & Estética</div>
+						<div class="team-socials">
+							<div class="team-social-btn">in</div>
+							<div class="team-social-btn">@</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ═══════════════ CONTACTO ═══════════════ -->
+	<section id="contacto">
+		<div class="section-inner">
+			<div class="contact-info">
+				<div class="section-label reveal">Contacto</div>
+				<h2 class="section-title reveal reveal-delay-1">Agenda tu<br><em>consulta hoy</em></h2>
+				<p class="section-body reveal reveal-delay-2">
+					Estamos aquí para ayudarte. Escríbenos, llámanos o visítanos en nuestra clínica en Córdoba.
+				</p>
+				<div class="contact-detail reveal reveal-delay-2">
+					<div class="contact-icon">📍</div>
+					<div>
+						<strong>Dirección</strong>
+						<span>Av. Rafael Núñez 4521, Cerro de las Rosas<br>Córdoba, Argentina</span>
+					</div>
+				</div>
+				<div class="contact-detail reveal reveal-delay-3">
+					<div class="contact-icon">📞</div>
+					<div>
+						<strong>Teléfono</strong>
+						<span>+54 351 234-5678</span>
+					</div>
+				</div>
+				<div class="contact-detail reveal reveal-delay-4">
+					<div class="contact-icon">✉️</div>
+					<div>
+						<strong>Email</strong>
+						<span>hola@dentalpure.com.ar</span>
+					</div>
+				</div>
+				<div class="contact-detail reveal reveal-delay-5">
+					<div class="contact-icon">🕐</div>
+					<div>
+						<strong>Horarios</strong>
+						<span>Lun–Vie: 8:00 – 20:00<br>Sábados: 9:00 – 14:00</span>
+					</div>
+				</div>
+			</div>
+			<div class="form-card reveal from-right">
+				<h3>Reservar una cita</h3>
+				<div class="form-row">
+					<div class="form-group">
+						<label>Nombre</label>
+						<input type="text" placeholder="Tu nombre" />
+					</div>
+					<div class="form-group">
+						<label>Apellido</label>
+						<input type="text" placeholder="Tu apellido" />
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group">
+						<label>Teléfono</label>
+						<input type="tel" placeholder="+54 351 ..." />
+					</div>
+					<div class="form-group">
+						<label>Email</label>
+						<input type="email" placeholder="tu@email.com" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label>Tratamiento de interés</label>
+					<select>
+						<option value="">Seleccioná un tratamiento</option>
+						<option>Blanqueamiento Dental</option>
+						<option>Implantes Dentales</option>
+						<option>Ortodoncia Invisible</option>
+						<option>Endodoncia</option>
+						<option>Odontología Infantil</option>
+						<option>Periodoncia</option>
+						<option>Consulta General</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label>Mensaje (opcional)</label>
+					<textarea placeholder="Contanos brevemente sobre lo que necesitás..."></textarea>
+				</div>
+				<button class="form-submit" onclick="handleSubmit(this)">
+					<span>Enviar Solicitud</span>
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+				</button>
+				<p class="form-note">🔒 Tu información está segura y no será compartida con terceros.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- ═══════════════ FOOTER ═══════════════ -->
+	<footer>
+		<div class="footer-inner">
+			<div class="footer-top">
+				<div class="footer-brand">
+					<a href="#inicio" class="nav-logo">Dental<span style="color:var(--sage-lt)">Pure</span></a>
+					<p>Transformamos sonrisas con excelencia clínica y calidez humana desde 2009 en Córdoba, Argentina.</p>
+					<div class="footer-socials">
+						<div class="footer-social">f</div>
+						<div class="footer-social">ig</div>
+						<div class="footer-social">in</div>
+						<div class="footer-social">yt</div>
+					</div>
+				</div>
+				<div class="footer-col">
+					<h4>Servicios</h4>
+					<ul>
+						<li><a href="#servicios">Blanqueamiento</a></li>
+						<li><a href="#servicios">Implantes</a></li>
+						<li><a href="#servicios">Ortodoncia</a></li>
+						<li><a href="#servicios">Endodoncia</a></li>
+						<li><a href="#servicios">Odontopediatría</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Clínica</h4>
+					<ul>
+						<li><a href="#nosotros">Nosotros</a></li>
+						<li><a href="#equipo">Equipo</a></li>
+						<li><a href="#galeria">Instalaciones</a></li>
+						<li><a href="#resenas">Reseñas</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Contacto</h4>
+					<ul>
+						<li><a href="#contacto">Agendar cita</a></li>
+						<li><a href="tel:+543512345678">+54 351 234-5678</a></li>
+						<li><a href="mailto:hola@dentalpure.com.ar">hola@dentalpure.com.ar</a></li>
+						<li><a href="#">Urgencias dentales</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<span>© 2026 DentalPure. Todos los derechos reservados.</span>
+				<div style="display:flex;gap:1.5rem;">
+					<a href="#" style="font-size:0.8rem;color:rgba(247,244,239,0.4);transition:color 0.25s;">Privacidad</a>
+					<a href="#" style="font-size:0.8rem;color:rgba(247,244,239,0.4);transition:color 0.25s;">Términos</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- ═══════════════ WHATSAPP ═══════════════ -->
+	<a href="https://wa.me/543512345678?text=Hola!%20Me%20gustaría%20solicitar%20información%20sobre%20sus%20servicios." target="_blank" class="wa-btn" aria-label="WhatsApp">
+		<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+			<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+		</svg>
+		<div class="wa-tooltip">¡Chateá con nosotros!</div>
+	</a>
+</Layout>
+
+<style>
+	/* ─── CSS VARIABLES ─── */
+	:root {
+		--ivory:    #F7F4EF;
+		--cream:    #EDE8DF;
+		--sage:     #7A9E8E;
+		--sage-dk:  #5A7D6D;
+		--sage-lt:  #A8C4B8;
+		--charcoal: #2C2C2C;
+		--warm-gray:#6B6560;
+		--gold:     #C9A96E;
+		--white:    #FFFFFF;
+	}
+
+	/* ─── RESET ─── */
+	*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+	html { scroll-behavior: smooth; }
+	body {
+		font-family: 'DM Sans', sans-serif;
+		background: var(--ivory);
+		color: var(--charcoal);
+		overflow-x: hidden;
+	}
+	img { display: block; max-width: 100%; }
+	a { text-decoration: none; color: inherit; }
+
+	/* ─── SCROLL ANIMATIONS ─── */
+	.reveal {
+		opacity: 0;
+		transform: translateY(40px);
+		transition: opacity 0.8s cubic-bezier(.16,1,.3,1), transform 0.8s cubic-bezier(.16,1,.3,1);
+	}
+	.reveal.from-left  { transform: translateX(-50px); }
+	.reveal.from-right { transform: translateX(50px); }
+	.reveal.scale-up   { transform: scale(0.92); }
+	.reveal.visible {
+		opacity: 1;
+		transform: none;
+	}
+	.reveal-delay-1 { transition-delay: 0.1s; }
+	.reveal-delay-2 { transition-delay: 0.2s; }
+	.reveal-delay-3 { transition-delay: 0.3s; }
+	.reveal-delay-4 { transition-delay: 0.4s; }
+	.reveal-delay-5 { transition-delay: 0.5s; }
+
+	/* ─── NAV ─── */
+	nav {
+		position: fixed;
+		top: 0; left: 0; right: 0;
+		z-index: 100;
+		padding: 1.25rem 4rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		transition: background 0.4s, box-shadow 0.4s, padding 0.4s;
+		background: rgba(247, 244, 239, 0.15);
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
+	}
+	nav.scrolled {
+		background: rgba(247,244,239,0.96);
+		backdrop-filter: blur(12px);
+		box-shadow: 0 1px 0 rgba(0,0,0,.06);
+		padding: 0.9rem 4rem;
+	}
+	.nav-logo {
+		font-family: 'Cormorant Garamond', serif;
+		font-size: 1.6rem;
+		font-weight: 600;
+		letter-spacing: 0.04em;
+		color: var(--charcoal);
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+	.nav-logo span { color: var(--sage); }
+	.nav-links {
+		display: flex;
+		gap: 2.5rem;
+		list-style: none;
+	}
+	.nav-links a {
+		font-size: 0.88rem;
+		font-weight: 500;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: var(--warm-gray);
+		transition: color 0.25s;
+	}
+	.nav-links a:hover { color: var(--sage-dk); }
+	.nav-cta {
+		background: var(--sage);
+		color: var(--white) !important;
+		padding: 0.6rem 1.4rem;
+		border-radius: 2rem;
+		transition: background 0.25s !important;
+	}
+	.nav-cta:hover { background: var(--sage-dk) !important; color: var(--white) !important; }
+
+	/* Mobile menu button */
+	.hamburger {
+		display: none;
+		flex-direction: column;
+		gap: 5px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 4px;
+	}
+	.hamburger span {
+		display: block;
+		width: 24px;
+		height: 2px;
+		background: var(--charcoal);
+		transition: all 0.3s;
+	}
+
+	/* ─── HERO ─── */
+	#inicio {
+		min-height: 100vh;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		position: relative;
+		overflow: hidden;
+	}
+	.hero-left {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 7rem 4rem 4rem 4rem;
+		position: relative;
+		z-index: 2;
+	}
+	.hero-badge {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		background: var(--cream);
+		border: 1px solid rgba(122,158,142,0.3);
+		color: var(--sage-dk);
+		font-size: 0.78rem;
+		font-weight: 600;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		padding: 0.4rem 1rem;
+		border-radius: 2rem;
+		width: fit-content;
+		margin-bottom: 1.8rem;
+	}
+	.hero-badge::before {
+		content: '';
+		width: 6px; height: 6px;
+		background: var(--sage);
+		border-radius: 50%;
+	}
+	.hero-h1 {
+		font-family: 'Cormorant Garamond', serif;
+		font-size: clamp(3rem, 5vw, 5.5rem);
+		font-weight: 300;
+		line-height: 1.08;
+		color: var(--charcoal);
+		margin-bottom: 1.5rem;
+	}
+	.hero-h1 em {
+		font-style: italic;
+		color: var(--sage);
+	}
+	.hero-p {
+		font-size: 1.05rem;
+		color: var(--warm-gray);
+		line-height: 1.7;
+		max-width: 480px;
+		margin-bottom: 2.5rem;
+	}
+	.hero-actions {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.btn-primary {
+		background: var(--sage);
+		color: var(--white);
+		padding: 0.9rem 2rem;
+		border-radius: 2rem;
+		font-size: 0.92rem;
+		font-weight: 500;
+		letter-spacing: 0.02em;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		transition: background 0.25s, transform 0.25s;
+	}
+	.btn-primary:hover { background: var(--sage-dk); transform: translateY(-2px); }
+	.btn-secondary {
+		color: var(--charcoal);
+		font-size: 0.92rem;
+		font-weight: 500;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		transition: gap 0.25s, color 0.25s;
+	}
+	.btn-secondary:hover { gap: 0.8rem; color: var(--sage-dk); }
+	.hero-stats {
+		display: flex;
+		gap: 2.5rem;
+		margin-top: 3.5rem;
+		padding-top: 2rem;
+		border-top: 1px solid var(--cream);
+	}
+	.stat-num {
+		font-family: 'Cormorant Garamond', serif;
+		font-size: 2rem;
+		font-weight: 600;
+		color: var(--charcoal);
+	}
+	.stat-num span { color: var(--sage); }
+	.stat-label {
+		font-size: 0.78rem;
+		color: var(--warm-gray);
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+	}
+	.hero-right {
+		position: relative;
+		overflow: hidden;
+	}
+	.hero-image-wrap {
+		position: absolute;
+		inset: 0;
+		overflow: hidden;
+	}
+	.hero-image-wrap::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background: linear-gradient(90deg, var(--ivory) 0%, transparent 30%);
+		pointer-events: none;
+		z-index: 1;
+	}
+	.hero-img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center top;
+		filter: saturate(0.85);
+	}
+	.hero-card {
+		position: absolute;
+		bottom: 3rem;
+		right: 3rem;
+		background: var(--white);
+		border-radius: 1.2rem;
+		padding: 1.25rem 1.5rem;
+		box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+		z-index: 2;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		animation: floatCard 4s ease-in-out infinite;
+	}
+	@keyframes floatCard {
+		0%, 100% { transform: translateY(0); }
+		50%       { transform: translateY(-8px); }
+	}
+	.hero-card-icon {
+		width: 44px; height: 44px;
+		background: var(--sage-lt);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.2rem;
+	}
+	.hero-card-text strong {
+		display: block;
+		font-size: 0.92rem;
+		font-weight: 600;
+		color: var(--charcoal);
+	}
+	.hero-card-text span { font-size: 0.78rem; color: var(--warm-gray); }
+
+	/* ─── SECTION COMMONS ─── */
+	section { position: relative; }
+	.section-inner {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 6rem 2rem;
+	}
+	.section-label {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.6rem;
+		font-size: 0.78rem;
+		font-weight: 600;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: var(--sage);
+		margin-bottom: 1rem;
+	}
+	.section-label::before {
+		content: '';
+		width: 24px; height: 1px;
+		background: var(--sage);
+	}
+	.section-title {
+		font-family: 'Cormorant Garamond', serif;
+		font-size: clamp(2.2rem, 3.5vw, 3.5rem);
+		font-weight: 300;
+		line-height: 1.15;
+		color: var(--charcoal);
+		margin-bottom: 1.2rem;
+	}
+	.section-title em { font-style: italic; color: var(--sage); }
+	.section-body {
+		font-size: 1rem;
+		color: var(--warm-gray);
+		line-height: 1.75;
+	}
+
+	/* ─── SERVICES ─── */
+	#servicios {
+		background: var(--charcoal);
+		overflow: hidden;
+	}
+	.services-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1px;
+	}
+	.service-item {
+		padding: 2.5rem 2rem;
+		border: 1px solid rgba(255,255,255,0.06);
+		transition: background 0.3s;
+	}
+	.service-item:hover { background: rgba(255,255,255,0.04); }
+	.service-icon {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+	.service-item h3 {
+		font-family: 'Cormorant Garamond', serif;
+		font-size: 1.3rem;
+		font-weight: 500;
+		color: var(--ivory);
+		margin-bottom: 0.6rem;
+	}
+	.service-item p {
+		font-size: 0.88rem;
+		color: rgba(247,244,239,0.5);
+		line-height: 1.65;
+	}
+	.service-tag {
+		display: inline-block;
+		margin-top: 1rem;
+		font-size: 0.72rem;
+		font-weight: 600;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: var(--sage-lt);
+		border-bottom: 1px solid var(--sage-lt);
+		padding-bottom: 1px;
+	}
+
+	/* ─── NOSOTROS ─── */
+	#nosotros .section-inner {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 5rem;
+		align-items: center;
+	}
+	.about-images {
+		position: relative;
+		height: 520px;
+	}
+	.about-img-main {
+		position: absolute;
+		top: 0; left: 0;
+		width: 75%;
+		height: 80%;
+		object-fit: cover;
+		border-radius: 1.5rem;
+		box-shadow: 0 30px 80px rgba(0,0,0,0.15);
+	}
+	.about-img-sec {
+		position: absolute;
+		bottom: 0; right: 0;
+		width: 55%;
+		height: 55%;
+		object-fit: cover;
+		border-radius: 1.2rem;
+		box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+		border: 6px solid var(--ivory);
+	}
+	.about-badge-cert {
+		position: absolute;
+		top: 50%;
+		right: -1rem;
+		transform: translateY(-50%);
+		background: var(--white);
+		border-radius: 1rem;
+		padding: 1rem 1.2rem;
+		box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+		text-align: center;
+		z-index: 2;
+	}
+	.about-badge-cert strong {
+		display: block;
+		font-family: 'Cormorant Garamond', serif;
+		font-size: 2rem;
+		color: var(--sage);
+	}
+	.about-badge-cert span { font-size: 0.72rem; color: var(--warm-gray); text-transform: uppercase; letter-spacing: 0.06em; }
+	.about-values {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+		margin-top: 2rem;
+	}
+	.value-card {
+		background: var(--cream);
+		border-radius: 1rem;
+		padding: 1.2rem;
+	}
+	.value-card h4 {
+		font-size: 0.88rem;
+		font-weight: 600;
+		color: var(--charcoal);
+		margin-bottom: 0.3rem;
+	}
+	.value-card p { font-size: 0.82rem; color: var(--warm-gray); line-height: 1.5; }
+	.value-icon { font-size: 1.3rem; margin-bottom: 0.5rem; }
+
+	/* ─── GALLERY ─── */
+	#galeria {
+		background: var(--cream);
+	}
+	.gallery-header {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		margin-bottom: 3rem;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+	.gallery-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 240px 200px;
+		gap: 1rem;
+	}
+	.gallery-item {
+		border-radius: 1rem;
+		overflow: hidden;
+		position: relative;
+		cursor: pointer;
+	}
+	.gallery-item:first-child {
+		grid-column: 1 / 3;
+		grid-row: 1 / 2;
+	}
+	.gallery-item:nth-child(4) {
+		grid-column: 3 / 5;
+		grid-row: 2 / 3;
+	}
+	.gallery-img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.6s cubic-bezier(.16,1,.3,1), filter 0.4s;
+	}
+	.gallery-item:hover .gallery-img { transform: scale(1.06); filter: saturate(1.1); }
+	.gallery-overlay {
+		position: absolute;
+		inset: 0;
+		background: linear-gradient(to top, rgba(44,44,44,0.5), transparent);
+		opacity: 0;
+		transition: opacity 0.35s;
+		display: flex;
+		align-items: flex-end;
+		padding: 1.2rem;
+	}
+	.gallery-item:hover .gallery-overlay { opacity: 1; }
+	.gallery-overlay span {
+		color: var(--white);
+		font-size: 0.85rem;
+		font-weight: 500;
+	}
+
+	/* ─── REVIEWS ─── */
+	#resenas .section-inner {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		gap: 4rem;
+		align-items: start;
+	}
+	.reviews-left { position: sticky; top: 6rem; }
+	.overall-score {
+		font-family: 'Cormorant Garamond', serif;
+		font-size: 5rem;
+		font-weight: 300;
+		color: var(--charcoal);
+		line-height: 1;
+	}
+	.stars { color: var(--gold); font-size: 1.1rem; letter-spacing: 2px; margin: 0.5rem 0; }
+	.reviews-count { font-size: 0.85rem; color: var(--warm-gray); }
+	.rating-bars { margin-top: 1.5rem; }
+	.rating-bar-row {
+		display: flex;
+		align-items: center;
+		gap: 0.8rem;
+		margin-bottom: 0.5rem;
+		font-size: 0.8rem;
+		color: var(--warm-gray);
+	}
+	.rating-bar-track {
+		flex: 1;
+		height: 5px;
+		background: var(--cream);
+		border-radius: 3px;
+		overflow: hidden;
+	}
+	.rating-bar-fill {
+		height: 100%;
+		background: var(--sage);
+		border-radius: 3px;
+		transition: width 1.2s cubic-bezier(.16,1,.3,1);
+	}
+	.reviews-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.2rem;
+	}
+	.review-card {
+		background: var(--white);
+		border-radius: 1.2rem;
+		padding: 1.5rem;
+		box-shadow: 0 4px 20px rgba(0,0,0,.05);
+		border: 1px solid var(--cream);
+	}
+	.review-card:nth-child(even) { margin-top: 2rem; }
+	.reviewer {
+		display: flex;
+		align-items: center;
+		gap: 0.8rem;
+		margin-bottom: 1rem;
+	}
+	.reviewer-avatar {
+		width: 40px; height: 40px;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+	.reviewer-name { font-size: 0.9rem; font-weight: 600; }
+	.reviewer-date { font-size: 0.75rem; color: var(--warm-gray); }
+	.review-stars { color: var(--gold); font-size: 0.85rem; margin-bottom: 0.7rem; }
+	.review-text { font-size: 0.88rem; color: var(--warm-gray); line-height: 1.65; }
+	.review-badge {
+		display: inline-block;
+		margin-top: 0.8rem;
+		font-size: 0.72rem;
+		background: var(--cream);
+		color: var(--sage-dk);
+		padding: 0.25rem 0.7rem;
+		border-radius: 1rem;
+		font-weight: 500;
+	}
+
+	/* ─── TEAM ─── */
+	#equipo {
+		background: var(--charcoal);
+	}
+	#equipo .section-title,
+	#equipo .section-label { color: var(--ivory); }
+	#equipo .section-label { color: var(--sage-lt); }
+	#equipo .section-label::before { background: var(--sage-lt); }
+	#equipo .section-body { color: rgba(247,244,239,0.6); }
+	.team-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1.5rem;
+		margin-top: 3rem;
+	}
+	.team-card {
+		border-radius: 1.5rem;
+		overflow: hidden;
+		position: relative;
+		aspect-ratio: 3/4;
+	}
+	.team-img {
+		width: 100%; height: 100%;
+		object-fit: cover;
+		filter: saturate(0.7) brightness(0.85);
+		transition: filter 0.5s, transform 0.5s;
+	}
+	.team-card:hover .team-img { filter: saturate(1) brightness(0.9); transform: scale(1.03); }
+	.team-info {
+		position: absolute;
+		bottom: 0; left: 0; right: 0;
+		padding: 2rem 1.5rem 1.5rem;
+		background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+	}
+	.team-name {
+		font-family: 'Cormorant Garamond', serif;
+		font-size: 1.4rem;
+		font-weight: 500;
+		color: var(--ivory);
+	}
+	.team-role { font-size: 0.82rem; color: var(--sage-lt); margin-top: 0.2rem; }
+	.team-socials { display: flex; gap: 0.5rem; margin-top: 0.8rem; }
+	.team-social-btn {
+		width: 30px; height: 30px;
+		background: rgba(255,255,255,0.15);
+		border-radius: 50%;
+		display: flex; align-items: center; justify-content: center;
+		font-size: 0.75rem;
+		color: var(--ivory);
+		transition: background 0.25s;
+		cursor: pointer;
+	}
+	.team-social-btn:hover { background: var(--sage); }
+
+	/* ─── CONTACT ─── */
+	#contacto .section-inner {
+		display: grid;
+		grid-template-columns: 1fr 1.2fr;
+		gap: 5rem;
+		align-items: start;
+	}
+	.contact-info h3 {
+		font-family: 'Cormorant Garamond', serif;
+		font-size: 1.8rem;
+		font-weight: 400;
+		margin-bottom: 1rem;
+		color: var(--charcoal);
+	}
+	.contact-detail {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		padding: 1rem 0;
+		border-bottom: 1px solid var(--cream);
+		font-size: 0.92rem;
+	}
+	.contact-detail:first-of-type { border-top: 1px solid var(--cream); margin-top: 1.5rem; }
+	.contact-icon {
+		width: 40px; height: 40px;
+		background: var(--cream);
+		border-radius: 50%;
+		display: flex; align-items: center; justify-content: center;
+		font-size: 1.1rem;
+		flex-shrink: 0;
+	}
+	.contact-detail strong { display: block; font-size: 0.8rem; color: var(--warm-gray); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.2rem; }
+	.contact-detail span { color: var(--charcoal); }
+	.form-card {
+		background: var(--white);
+		border-radius: 1.5rem;
+		padding: 2.5rem;
+		box-shadow: 0 20px 60px rgba(0,0,0,.07);
+	}
+	.form-card h3 {
+		font-family: 'Cormorant Garamond', serif;
+		font-size: 1.5rem;
+		font-weight: 500;
+		margin-bottom: 1.5rem;
+		color: var(--charcoal);
+	}
+	.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+	.form-group { margin-bottom: 1rem; }
+	.form-group label {
+		display: block;
+		font-size: 0.78rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.07em;
+		color: var(--warm-gray);
+		margin-bottom: 0.4rem;
+	}
+	.form-group input,
+	.form-group select,
+	.form-group textarea {
+		width: 100%;
+		padding: 0.8rem 1rem;
+		background: var(--ivory);
+		border: 1.5px solid transparent;
+		border-radius: 0.75rem;
+		font-family: 'DM Sans', sans-serif;
+		font-size: 0.92rem;
+		color: var(--charcoal);
+		transition: border-color 0.25s, background 0.25s;
+		outline: none;
+		appearance: none;
+	}
+	.form-group input:focus,
+	.form-group select:focus,
+	.form-group textarea:focus {
+		border-color: var(--sage);
+		background: var(--white);
+	}
+	.form-group textarea { resize: vertical; min-height: 100px; }
+	.form-submit {
+		width: 100%;
+		background: var(--sage);
+		color: var(--white);
+		border: none;
+		border-radius: 2rem;
+		padding: 1rem;
+		font-family: 'DM Sans', sans-serif;
+		font-size: 0.95rem;
+		font-weight: 500;
+		cursor: pointer;
+		margin-top: 0.5rem;
+		transition: background 0.25s, transform 0.25s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
+	}
+	.form-submit:hover { background: var(--sage-dk); transform: translateY(-2px); }
+	.form-note { font-size: 0.75rem; color: var(--warm-gray); text-align: center; margin-top: 0.8rem; }
+
+	/* ─── FOOTER ─── */
+	footer {
+		background: #1E1E1E;
+		color: rgba(247,244,239,0.7);
+	}
+	.footer-inner {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 4rem 2rem 2rem;
+	}
+	.footer-top {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr 1fr;
+		gap: 3rem;
+		padding-bottom: 3rem;
+		border-bottom: 1px solid rgba(255,255,255,0.08);
+	}
+	.footer-brand .nav-logo {
+		color: var(--ivory);
+		font-size: 1.4rem;
+		margin-bottom: 0.8rem;
+	}
+	.footer-brand p { font-size: 0.85rem; line-height: 1.7; max-width: 280px; }
+	.footer-socials { display: flex; gap: 0.6rem; margin-top: 1.2rem; }
+	.footer-social {
+		width: 34px; height: 34px;
+		background: rgba(255,255,255,0.08);
+		border-radius: 50%;
+		display: flex; align-items: center; justify-content: center;
+		font-size: 0.85rem;
+		transition: background 0.25s;
+		cursor: pointer;
+	}
+	.footer-social:hover { background: var(--sage); }
+	.footer-col h4 {
+		font-size: 0.78rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: var(--ivory);
+		margin-bottom: 1.2rem;
+	}
+	.footer-col ul { list-style: none; }
+	.footer-col li { margin-bottom: 0.6rem; }
+	.footer-col a {
+		font-size: 0.88rem;
+		color: rgba(247,244,239,0.55);
+		transition: color 0.25s;
+	}
+	.footer-col a:hover { color: var(--sage-lt); }
+	.footer-bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 2rem;
+		font-size: 0.8rem;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	/* ─── WHATSAPP BUTTON ─── */
+	.wa-btn {
+		position: fixed;
+		bottom: 2rem;
+		right: 2rem;
+		z-index: 999;
+		width: 56px; height: 56px;
+		background: #25D366;
+		border-radius: 50%;
+		display: flex; align-items: center; justify-content: center;
+		box-shadow: 0 8px 30px rgba(37,211,102,0.45);
+		cursor: pointer;
+		transition: transform 0.3s, box-shadow 0.3s;
+		animation: waPulse 3s ease-in-out infinite;
+	}
+	.wa-btn:hover {
+		transform: scale(1.12);
+		box-shadow: 0 12px 40px rgba(37,211,102,0.6);
+		animation: none;
+	}
+	.wa-btn svg { width: 28px; height: 28px; fill: white; }
+	@keyframes waPulse {
+		0%, 100% { box-shadow: 0 8px 30px rgba(37,211,102,0.45); }
+		50%       { box-shadow: 0 8px 40px rgba(37,211,102,0.75), 0 0 0 10px rgba(37,211,102,0.12); }
+	}
+	.wa-tooltip {
+		position: absolute;
+		left: calc(100% + 12px);
+		top: 50%;
+		transform: translateY(-50%);
+		background: var(--charcoal);
+		color: var(--white);
+		font-size: 0.8rem;
+		font-weight: 500;
+		white-space: nowrap;
+		padding: 0.45rem 0.9rem;
+		border-radius: 0.5rem;
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 0.25s;
+	}
+	.wa-tooltip::before {
+		content: '';
+		position: absolute;
+		left: -5px; top: 50%;
+		transform: translateY(-50%);
+		border: 5px solid transparent;
+		border-right-color: var(--charcoal);
+		border-left: 0;
+	}
+	.wa-btn:hover .wa-tooltip { opacity: 1; }
+
+	/* ═══════════════════════════════════════
+	   FIX: neutralizar animaciones horizontales
+	   en pantallas ≤ 1024px para evitar
+	   scroll lateral
+	═══════════════════════════════════════ */
+	@media (max-width: 1024px) {
+		/* Forzar clipping horizontal en todo el sitio */
+		html, body { overflow-x: hidden; }
+
+		/* from-left y from-right pasan a animar solo en Y */
+		.reveal.from-left,
+		.reveal.from-right {
+			transform: translateY(40px);
+		}
+		.reveal.from-left.visible,
+		.reveal.from-right.visible {
+			transform: none;
+		}
+	}
+
+	/* ═══════════════════════════════════════
+	   RESPONSIVE — TABLET (≤ 1024px)
+	═══════════════════════════════════════ */
+	@media (max-width: 1024px) {
+		/* Nav */
+		nav { padding: 1.25rem 2rem; }
+		nav.scrolled { padding: 0.9rem 2rem; }
+		.nav-links { display: none; }
+		.hamburger { display: flex; }
+
+		/* Hero: imagen como fondo, texto encima */
+		#inicio {
+			grid-template-columns: 1fr;
+			min-height: 100vh;
+			position: relative;
+		}
+		.hero-right {
+			display: block;
+			position: absolute;
+			inset: 0;
+			z-index: 0;
+		}
+		.hero-image-wrap::after {
+			background: linear-gradient(
+				to right,
+				rgba(247, 244, 239, 0.95) 0%,
+				rgba(247, 244, 239, 0.80) 50%,
+				rgba(247, 244, 239, 0.40) 100%
+			);
+		}
+		/* Ocultar la floating card en mobile para no molestar */
+		.hero-card { display: none; }
+		.hero-left {
+			padding: 6rem 2rem 3rem;
+			position: relative;
+			z-index: 1;
+			min-height: 100vh;
+		}
+
+		/* Nosotros */
+		#nosotros .section-inner { grid-template-columns: 1fr; gap: 3rem; }
+		.about-images { height: 360px; }
+
+		/* Contacto */
+		#contacto .section-inner { grid-template-columns: 1fr; gap: 3rem; }
+
+		/* Reseñas */
+		#resenas .section-inner { grid-template-columns: 1fr; gap: 2rem; }
+		.reviews-left { position: static; }
+		.reviews-grid { grid-template-columns: 1fr 1fr; }
+		.review-card:nth-child(even) { margin-top: 0; }
+
+		/* Footer */
+		.footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+
+		/* Equipo */
+		.team-grid { grid-template-columns: 1fr 1fr; }
+
+		/* Servicios */
+		.services-grid { grid-template-columns: repeat(2, 1fr); }
+	}
+
+	/* ═══════════════════════════════════════
+	   RESPONSIVE — MOBILE (≤ 600px)
+	═══════════════════════════════════════ */
+	@media (max-width: 600px) {
+		.section-inner { padding: 4rem 1.5rem; }
+
+		/* Hero */
+		.hero-h1 { font-size: 2.5rem; }
+		.hero-image-wrap::after {
+			background: linear-gradient(
+				to bottom,
+				rgba(247, 244, 239, 0.92) 0%,
+				rgba(247, 244, 239, 0.75) 70%,
+				rgba(247, 244, 239, 0.50) 100%
+			);
+		}
+		.hero-stats { gap: 1.5rem; }
+
+		/* Galería: 1 columna, altura fija */
+		.gallery-grid {
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+		}
+		.gallery-item {
+			height: 220px;
+		}
+		.gallery-item:first-child,
+		.gallery-item:nth-child(4) {
+			grid-column: auto;
+			grid-row: auto;
+		}
+
+		/* Reseñas: 1 columna */
+		#resenas .section-inner { grid-template-columns: 1fr; }
+		.reviews-grid { grid-template-columns: 1fr; }
+		.review-card:nth-child(even) { margin-top: 0; }
+
+		/* Footer */
+		.footer-top { grid-template-columns: 1fr; }
+
+		/* Formulario */
+		.form-row { grid-template-columns: 1fr; }
+
+		/* Equipo */
+		.team-grid { grid-template-columns: 1fr; }
+
+		/* Nosotros */
+		.about-values { grid-template-columns: 1fr; }
+		.about-images { height: 300px; }
+		.about-badge-cert { right: 0; }
+
+		/* Servicios */
+		.services-grid { grid-template-columns: 1fr; }
+	}
+
+	/* ─── Mobile menu ─── */
+	.mobile-menu {
+		display: none;
+		position: fixed;
+		inset: 0;
+		z-index: 200;
+		background: rgba(247,244,239,0.98);
+		backdrop-filter: blur(10px);
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+	}
+	.mobile-menu.open { display: flex; }
+	.mobile-menu a {
+		font-family: 'Cormorant Garamond', serif;
+		font-size: 2rem;
+		font-weight: 400;
+		color: var(--charcoal);
+		letter-spacing: 0.03em;
+		transition: color 0.25s;
+	}
+	.mobile-menu a:hover { color: var(--sage); }
+	.mobile-menu-close {
+		position: absolute;
+		top: 1.5rem; right: 2rem;
+		font-size: 2rem;
+		background: none;
+		border: none;
+		cursor: pointer;
+		color: var(--charcoal);
+		z-index: 201;
+	}
+</style>
+
+<!-- ═══════════════ JS ═══════════════ -->
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		// ── Navbar scroll ──
+		const nav = document.getElementById('navbar');
+		window.addEventListener('scroll', () => {
+			nav.classList.toggle('scrolled', window.scrollY > 40);
+		});
+
+		// ── Mobile menu ──
+		const hamburger = document.getElementById('hamburger');
+		const mobileMenu = document.getElementById('mobileMenu');
+		const menuClose  = document.getElementById('menuClose');
+
+		hamburger.addEventListener('click', () => {
+			mobileMenu.classList.add('open');
+		});
+		menuClose.addEventListener('click', () => {
+			mobileMenu.classList.remove('open');
+		});
+		document.querySelectorAll('.mobile-nav-link').forEach(link => {
+			link.addEventListener('click', () => {
+				mobileMenu.classList.remove('open');
+			});
+		});
+
+		// ── Scroll reveal ──
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('visible');
+					if (entry.target.classList.contains('rating-bars')) {
+						setTimeout(() => {
+							document.querySelectorAll('.rating-bar-fill').forEach(bar => {
+								bar.style.width = bar.dataset.width + '%';
+							});
+						}, 300);
+					}
+				}
+			});
+		}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+		document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+		const ratingsEl = document.querySelector('.rating-bars');
+		if (ratingsEl) observer.observe(ratingsEl);
+
+		// ── Trigger hero reveals immediately ──
+		setTimeout(() => {
+			document.querySelectorAll('#inicio .reveal').forEach(el => {
+				el.classList.add('visible');
+			});
+		}, 100);
+
+		// ── Parallax subtle on hero (solo desktop) ──
+		window.addEventListener('scroll', () => {
+			if (window.innerWidth > 1024) {
+				const heroImg = document.querySelector('.hero-img');
+				if (heroImg) {
+					heroImg.style.transform = `translateY(${window.scrollY * 0.25}px)`;
+				}
+			}
+		});
+	});
+
+	// ── Form submit ──
+	window.handleSubmit = function(btn) {
+		const span = btn.querySelector('span');
+		span.textContent = '✓ Enviado con éxito';
+		btn.style.background = 'var(--sage-dk)';
+		btn.disabled = true;
+		setTimeout(() => {
+			span.textContent = 'Enviar Solicitud';
+			btn.style.background = '';
+			btn.disabled = false;
+		}, 3000);
+	}
+</script>
