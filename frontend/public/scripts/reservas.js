@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!fecha) return;
 
     try {
-      const res = await fetch(`http://localhost:3000/api/availability?date=${fecha}`);
+      const res = await fetch(`https://odontologiaback.onrender.com/api/availability?date=${fecha}`);
       const data = await res.json();
       renderHorarios(data.availableSlots);
     } catch (err) {
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     try {
-      const res = await fetch("http://localhost:3000/api/appointments", {
+      const res = await fetch("https://odontologiaback.onrender.com/api/appointments", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
